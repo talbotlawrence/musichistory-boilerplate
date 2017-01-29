@@ -4,73 +4,107 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/song.css">
 </head>
 
 <body>
-	<select>
-		<option value="artists">The Beatles</option>
-		<option value="artists">The Police</option>
-		<option value="artists">The Rolling Stones</option>
-		<option value="artists">Bob Marley</option>
-		<option value="artists">Led Zeppelin</option>
-	</select>
+    <div class="main">
+      <!-- <div class="add-music"> -->
+        <!-- The Add Music View should not appear when the user first visits your page. -->
+        <!-- When the user clicks on "Add Music" in the navigation bar, the List Music View should be hidden, and the Add Music View should be shown and vice-versa.-->
+        <!-- Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs, and update the song list in the DOM -->
+        <nav class="nav">
+            <p>View Music</p> | 
+          <a class="nav-link active" href="#">List Music</a> | 
+          <a class="nav-link" href="#">Add Music</a>
+        </nav>
 
-	<select>
-		<option value="albums">Abbey Road</option>
-		<option value="albums">Reggatta de Blanc</option>
-		<option value="albums">Sticky Fingers</option>
-		<option value="albums">Legend</option>
-		<option value="albums">Houses of the Holy</option>
-	</select>
+       <!--  Song: <input type="text" name="song"><br>
+        Artist: <input type="text" name="artist"><br>
+        Album: <input type="text" name="album"><br>
+        <input type="submit" value="Add">
+      </div> <!--add-music-->
 
-	<ul>
-		<li><a href="#">View music</a></li>
-		<li><a href="#">View music</a></li>
-		<li><a href="#">View music</a></li>
-		<li><a href="#">View music</a></li>
-		<li><a href="#">View music</a></li>
-	</ul>
+      <div class="list-view">
+        
+        <select>
+                <option value="artists">The Beatles</option>
+                <option value="artists">The Police</option>
+                <option value="artists">The Rolling Stones</option>
+                <option value="artists">Bob Marley</option>
+                <option value="artists">Led Zeppelin</option>
+        </select>
 
-	<select class="beatles">
-		<option value="songs">Come Together</option>
-		<option value="songs">Something</option>
-		<option value="songs">Oh! Darling</option>
-		<option value="songs">Because</option>
-		<option value="songs">She Came In Through the Bathroom Window</option>
-	</select>
+        <select>
+                <option value="albums">Abbey Road</option>
+                <option value="albums">Reggatta de Blanc</option>
+                <option value="albums">Sticky Fingers</option>
+                <option value="albums">Legend</option>
+                <option value="albums">Houses of the Holy</option>
+        </select>
 
-	<select class="police">
-		<option value="songs">Message in a Bottle</option>
-		<option value="songs">Bring on the Night</option>
-		<option value="songs">It's Alright for You</option>
-		<option value="songs">Does Everyone Stare</option>
-		<option value="songs">No Time This Time</option>
-	</select>
+        <ul>
+                <li><a href="#">View music</a></li>
+                <li><a href="#">View music</a></li>
+                <li><a href="#">View music</a></li>
+                <li><a href="#">View music</a></li>
+                <li><a href="#">View music</a></li>
+        </ul>
 
-	<select class="stones">
-		<option value="songs">Brown Sugar</option>
-		<option value="songs">Wild Horses</option>
-		<option value="songs">Can't You Hear Me Knocking</option>
-		<option value="songs">I Got the Blues</option>
-		<option value="songs">Dead Flowers</option>
-	</select>
+        <select class="beatles">
+                <option value="songs">Come Together</option>
+                <option value="songs">Something</option>
+                <option value="songs">Oh! Darling</option>
+                <option value="songs">Because</option>
+                <option value="songs">She Came In Through the Bathroom Window</option>
+        </select>
 
-	<select class="marley">
-		<option value="songs">Lively Up Yourself</option>
-		<option value="songs">No Woman, No Cry</option>
-		<option value="songs">Them Belly Full (But We Hungry)</option>
-		<option value="songs">Natty Dread</option>
-		<option value="songs">Bend Down Low</option>
-	</select>
+        <select class="police">
+                <option value="songs">Message in a Bottle</option>
+                <option value="songs">Bring on the Night</option>
+                <option value="songs">It's Alright for You</option>
+                <option value="songs">Does Everyone Stare</option>
+                <option value="songs">No Time This Time</option>
+        </select>
 
-	<select class="zeppelin">
-		<option value="songs">The Song Remains the Same</option>
-		<option value="songs">Over the Hills and Far Away</option>
-		<option value="songs">The Crunge</option>
-		<option value="songs">Dancing Days</option>
-		<option value="songs">The Ocean</option>
-	</select>
+        <select class="stones">
+                <option value="songs">Brown Sugar</option>
+                <option value="songs">Wild Horses</option>
+                <option value="songs">Can't You Hear Me Knocking</option>
+                <option value="songs">I Got the Blues</option>
+                <option value="songs">Dead Flowers</option>
+        </select>
 
-	<script type="text/javascript" src="javascript/song.js"></script> 
+        <select class="marley">
+                <option value="songs">Lively Up Yourself</option>
+                <option value="songs">No Woman, No Cry</option>
+                <option value="songs">Them Belly Full (But We Hungry)</option>
+                <option value="songs">Natty Dread</option>
+                <option value="songs">Bend Down Low</option>
+        </select>
+
+        <select class="zeppelin">
+                <option value="songs">The Song Remains the Same</option>
+                <option value="songs">Over the Hills and Far Away</option>
+                <option value="songs">The Crunge</option>
+                <option value="songs">Dancing Days</option>
+                <option value="songs">The Ocean</option>
+        </select>
+      </div><!--view-music-->
+    </div><!--main-->
+
+    <div id="myArray">
+        
+    </div>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="javascript/song.js"></script> 
 </body>
 </html>

@@ -1,0 +1,13 @@
+.main {
+  width: 75%;
+  height: 75%; }
+
+nav {
+  display: flex;
+  border: 2px solid;
+  width: 75%;
+  height: 4em;
+  background-color: #FFB4B0;
+  margin: 50% 0 50% 1em; }
+
+/*# sourceMappingURL=song.css.map */
